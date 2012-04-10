@@ -1,0 +1,116 @@
+@import url(cssreset-min.css);
+@import url(cssfonts-min.css);
+
+a:link, a:visited {
+    color: #369;
+    text-decoration: none;
+}
+a:hover {
+    color: #a00;
+}
+strong {font-weight:bold;}
+html, body {background: #fff;}
+h1 { font-size: 28px; font-weight: bold;}
+h2 { font-size: 24px; font-weight: bold;}
+h3 { font-size: 19px; font-weight:bold;}
+h4 { font-size: 16px; font-weight:bold;}
+h5 { font-size: 16px; font-weight:bold;}
+h6 { font-size: 15px; font-weight:bold;}
+
+/* clearfix */
+#header,
+#main,
+#top-menu,
+#main #content .wiki,
+#header #main-menu ul,
+.clearfix {zoom: 1;}
+#header #main-menu ul:after,
+#header:after,
+#main:after,
+#top-menu:after,
+#main #content .wiki:after,
+.clearfix:after {content: ""; display: block; clear: both;}
+
+#wrapper {width: 98%; margin: 0 auto;background: #fff;}
+
+/* #top-menu */
+#top-menu {background: #eee;font-size: 93%;}
+#top-menu #account,
+#top-menu #loggedas {float: right;margin-right: 8px;}
+#top-menu ul li {display: inline-block;margin-right: 8px;}
+#top-menu a {padding: 5px; display: inline-block; font-family: Verdana;}
+
+/* #header */
+#header {padding: 8px; background: url(http://a.mimgs.com/index/common/logo_miiicasa_170x40.png) 10px 10px no-repeat;}
+#header h1 {text-indent: -1000em; height: 60px;}
+#quick-search {float: right; text-align: right;}
+#quick-search form {margin-bottom: 5px;}
+#quick-search form input {padding: 5px; width: 200px; border-radius: 3px; border: solid 2px #eee;}
+#quick-search form input:hover {background: #ffe;}
+#quick-search select {padding: 3px;}
+#main-menu {font-size: 12px;font-weight: bold;border-radius: 4px;border: solid 1px #cacaca;background:-webkit-linear-gradient(top, rgb(250, 250, 250), rgb(234, 234, 234));box-shadow: rgba(255, 255, 255, 0.398438) 0px 1px 0px 0px, rgba(0, 0, 0, 0.0976563) 0px 0px 10px 0px;}
+#main-menu ul li {float: left;}
+#main-menu ul li a {color: #333; display: block;padding: 8px 13px 5px; font-size: 106%; text-decoration: none;}
+#main-menu ul li a.selected {background: #666; color: #fff;}
+#main-menu ul li a:link,
+#main-menu ul li a:visited {text-decoration: none;}
+#main-menu ul li a:hover {color: #333; background: #ccc;}
+
+/* #main */
+#main {margin: 8px;position:relative;}
+#main.nosidebar #sidebar {display:none;}
+#main.nosidebar #content {width: auto;}
+#main.nosidebar #sidebar {display:none;}
+#content {float: left;width: 80%;}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {border-bottom: solid 1px #ccc;margin: 20px 0 10px;}
+#content h1 a, #content h2 a, #content h3 a, #content h4 a, #content h5 a, #content h6 a {color: #fff;text-decoration: none;}
+#content h1 a:hover, #content h2 a:hover, #content h3 a:hover, #content h4 a:hover, #content h5 a:hover, #content h6 a:hover {color: #ccc;}
+#content ul {margin-left: 20px;}
+#content ul li {list-style: disc;}
+#content ul li li {list-style: circle;}
+#content pre {background: #f8f8f8;border:solid 1px #ccc;border-radius:3px;padding: 6px 10px; line-height: 19px;overflow: auto;}
+#content pre,
+#content pre span,
+#content code  {font-size: 13px;font-family: 'Bitstream Vera Sans Mono', Courier, monospace;line-height: 1.3;}
+#content {color:#333; font-size: 16px; line-height:1.5;font-family: "微軟正黑體", "Microsoft JhengHei", Helvetica, arial, freesans, clean, sans-serif; padding-left: 8px;}
+#content .subtitle {font-size: 11px; margin-top: -10px; margin-bottom: 10px;}
+#content dd { margin-bottom: 1em; font-size: 10px;}
+#content dt { line-height: 18px; background-position: 0 50%; background-repeat: no-repeat; }
+#content dt.me .time { border-bottom: 1px solid #999; }
+#content dt .time { color: #777; font-size: 80%; }
+#content span.project:after, #search-results span.project:after { content: " -"; }
+#content dd span.description {color: #808080; font-size: 10px;}
+#content {color:#333; font-size:16px; line-height:1.8; font-family: 微軟正黑體, "Microsoft JhengHei", 蘋果儷中黑, "Apple LiGothic Medium", Arial;}
+#content .contextual {float: right; }
+#content .contextual a.icon {background-image:-webkit-linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));}
+#content .contextual a.icon {display:inline-block;padding:2px 5px; min-width: 54px;text-align:center;border-radius:3px;border:solid 1px #ccc;font-size:9px;color:#000;font-family:Verdana;white-space:nowrap;}
+#content .toc {width: 180px; background: #ffc; padding: 10px;}
+#content .toc {position: absolute; right: 10px; top: 110px;}
+#content .toc li {display: block;}
+#content .toc a {color: #a00;}
+#content table,
+#content table th,
+#content table td {border: solid 1px #ccc;}
+#content table th,
+#content table td {padding: 5px;}
+#content table th {background: #efefef;font-weight: bold;}
+#content .issue {background: #ffe;border: solid 1px #eee;border-radius: 5px;padding: 10px;margin-bottom: 20px; }
+#content .issue .wiki {margin: 20px 30px 10px;}
+#content .issue table.attributes {width: 100%;border:none;}
+#content .issue table th {background: transparent;font-weight: bold;}
+#content table th, #main #content table td {border: none;}
+#content .issue .author {font-size: 10px;}
+#content .issue h3 {float:left;}
+#content .issue .next-prev-links {float:right;font-size: 13px; }
+#sidebar {float: right; background: #efefef; width: 180px; padding: 10px;margin-left: 20px;width: 15%;}
+#sidebar h3 {margin-bottom: 10px;}
+#sidebar p {margin-left: 8px; line-height: 1.7;}
+#sidebar p a {text-decoration: none; color: #a00;}
+#sidebar input.button-small {display: inline-block; margin-top: 15px;}
+
+/* #footer */
+#footer {border-top: solid 1px #ccc; text-align: center; font-size: 11px; color: #999; padding: 10px 0;}
+
+.attachments {padding: 10px;margin-top: 20px;border-top: solid 1px #ccc;font-size: 11px;overflow: auto;}
+#wiki_add_attachment {background: #ccc;color: #fff;font-size: 93%;padding: 4px;}
+.other-formats {text-align: center;margin: 15px 0;}
