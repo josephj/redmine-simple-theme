@@ -420,6 +420,7 @@ input[type=submit], button {
         .new_issue {
             padding: 5px;
             width: 800px;
+            margin: 0 auto;
             @include border-radius(5px);
             text-align: center;
             background: #d2d7e6;
