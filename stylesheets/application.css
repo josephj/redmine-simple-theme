@@ -1,6 +1,6 @@
 @import url(cssreset-min.css);
 @import url(cssfonts-min.css);
-
+// just for test
 a:link, a:visited {
     color: #369;
     text-decoration: none;
