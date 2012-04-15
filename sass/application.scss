@@ -166,7 +166,7 @@ input[type=submit], button {
 /* #header {{{ */
 #header {
     padding: 8px;
-    background: url(http://a.mimgs.com/index/common/logo_miiicasa_170x40.png) 10px 10px no-repeat;
+    background: url(../images/logo_miiicasa_170x40.png) 10px 10px no-repeat;
     h1 {
         text-indent: -1000em;
         height: 60px;
@@ -225,6 +225,9 @@ input[type=submit], button {
 /* }}} */
 /* #main {{{ */
 #main {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
     font-family: 微軟正黑體, "Microsoft JhengHei", 蘋果儷中黑, "Apple LiGothic Medium", Helvetica, arial, freesans, clean, sans-serif;
     margin: 8px;
     position: relative;
@@ -242,7 +245,6 @@ input[type=submit], button {
     }
     /* #main #content {{{ */
     #content {
-        color: #333;
         float: left;
         width: 80%;
         h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -266,8 +268,6 @@ input[type=submit], button {
         }
         /* #content .wiki-page {{{ */
         .wiki-page {
-            font-size: 16px;
-            line-height: 1.8;
             a:hover {
                 text-decoration: underline;
             }
@@ -468,9 +468,6 @@ input[type=submit], button {
             }
         }
         /* }}} */
-        .project {
-            font-size: 13px;
-        }
         table.issues {
             background-color: #f8f8f8;
             border-collapse: collapse;
@@ -535,6 +532,14 @@ input[type=submit], button {
         span.project:after {
             content: " -";
         }
+        .project {
+            li {
+                list-style: disc;
+                li {
+                    list-style: circle;
+                }
+            }
+        }
     }
 
     /* }}} */
@@ -587,3 +592,17 @@ input[type=submit], button {
     padding: 10px 0;
 }
 /* }}} */
+.controller-projects,
+.controller-welcome {
+    #main {
+        ul {
+            margin: 0 0 8px 20px;
+            li {
+                list-style: disc;
+                li {
+                    list-style: circle;
+                }
+            }
+        }
+    }
+}
