@@ -8,6 +8,11 @@ html, body {
     font-family: Helvetica,arial,freesans,clean,sans-serif;
     line-height: 1.5;
 }
+input, textarea, select, option {
+    color: #333;
+    font-size: 13px;
+    font-family: Helvetica,arial,freesans,clean,sans-serif;
+}
 a {
     &:link, &:visited {
         color: #4183C4;
@@ -116,24 +121,16 @@ input[type=submit], button {
     padding: 0 15px;
 }
 /* Button }}} */
-/* Clear Floating {{{*/
-#header, #main, #top-menu, #main #content .wiki, #header #main-menu ul, .clearfix {
+/* Clear Floating {{{ */
+#header, #main, #top-menu, #main #content .wiki,
+#header #main-menu ul, .clearfix, #attributes {
     zoom: 1;
 }
-#header {
-    #main-menu ul:after, &:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-}
+#header #main-menu ul:after, #attributes:after, #tabular:after, #watchers_form:after,
 #main:after, #top-menu:after, #main #content .wiki:after, .clearfix:after {
     content: "";
     display: block;
     clear: both;
-}
-#wrapper {
-    background: #fff;
 }
 /* Clear Floating }}} */
 /* #top-menu {{{ */
@@ -226,7 +223,6 @@ input[type=submit], button {
 /* #main {{{ */
 #main {
     color: #333;
-    font-size: 16px;
     line-height: 1.8;
     font-family: 微軟正黑體, "Microsoft JhengHei", 蘋果儷中黑, "Apple LiGothic Medium", Helvetica, arial, freesans, clean, sans-serif;
     margin: 8px;
@@ -246,6 +242,7 @@ input[type=submit], button {
     /* #main #content {{{ */
     #content {
         float: left;
+        font-size: 16px;
         width: 80%;
         h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
             text-decoration: none;
@@ -266,6 +263,20 @@ input[type=submit], button {
                 margin: 0 5px;
             }
         }
+        /* #content #history {{{ */
+        #history {
+            .journal {
+                background: #e6e9f5;
+                padding: 8px;
+                margin-bottom: 15px;
+                @include border-radius(5px);
+                p {
+                    margin-left: 10px;
+                }
+
+            }
+        }
+        /* #content #history }}} */
         /* #content .wiki-page {{{ */
         .wiki-page {
             a:hover {
@@ -367,6 +378,7 @@ input[type=submit], button {
                 &.attributes {
                     table-layout: fixed;
                     border: solid 1px #fff;
+                    font-size: 13px;
                     width: 100%;
                     @include border-radius(10px);
                     table.progress {
@@ -382,8 +394,7 @@ input[type=submit], button {
                     text-align: right;
                     padding-right: 8px;
                     font-weight: bold;
-                    max-width: 150px;
-                    width: 120px;
+                    width: 130px;
                 }
                 td {
                     background: #e6e9f5;
@@ -406,20 +417,78 @@ input[type=submit], button {
             }
         }
         /* issue (end) }}} */
-        /* #content #history {{{ */
-        #history {
-            .journal {
-                background: #e6e9f5;
-                padding: 8px;
-                margin-bottom: 15px;
-                @include border-radius(5px);
-                p {
-                    margin-left: 10px;
-                }
-
+        .new_issue {
+            padding: 5px;
+            width: 800px;
+            @include border-radius(5px);
+            text-align: center;
+            background: #d2d7e6;
+            a {
+                font-size: 13px;
+                font-weight: bold;
             }
+            .tabular {
+                margin-bottom: 10px;
+                text-align: left;
+                p {
+                    margin: 0;
+                    padding: 3px 0 3px 0;
+                    padding-left: 180px; /* width of left column containing the label elements */
+                    min-height: 1.8em;
+                    clear:left;
+                }
+                label {
+                    font-weight: bold;
+                    float: left;
+                    text-align: right;
+                    margin-left: -130px;
+                    width: 115px;
+                    &.floating {
+                        font-weight: normal;
+                        margin-left: 0px;
+                        text-align: left;
+                        width: 270px;
+                    }
+                    &.block {
+                        font-weight: normal;
+                        margin-left: 0px !important;
+                        text-align: left;
+                        float: none;
+                        display: block;
+                        width: auto;
+                    }
+                    &.inline{
+                        float: none;
+                        margin-left: 5px !important;
+                        width: auto;
+                    }
+                }
+            }
+
+            p {
+                label {
+                    font-size: 13px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    @include inline-block();
+                }
+            }
+            .splitcontentleft {
+                float: left;
+                width: 50%;
+            }
+            .splitcontentright {
+                width: 50%;
+                float: right;
+            }
+            label * {
+                vertical-align: middle;
+            }
+            #watchers_form label.floating {
+                width: auto;
+            }
+
         }
-        /* #content #history }}} */
         /* #content .tabs {{{ */
         .tabs {
             ul {
@@ -605,4 +674,11 @@ input[type=submit], button {
             }
         }
     }
+}
+.wiki-edit {
+    width: 600px;
+    height: 200px;
+}
+.required {
+    color: #a00;
 }
