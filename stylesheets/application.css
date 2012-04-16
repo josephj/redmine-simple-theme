@@ -12,7 +12,7 @@ html, body {
 input, textarea, select, option {
     color: #333;
     font-size: 13px;
-    font-family: Helvetica,arial,freesans,clean,sans-serif;
+    font-family: 微軟正黑體, "Microsoft JhengHei", 蘋果儷中黑, "Apple LiGothic Medium", Helvetica, arial, freesans, clean, sans-serif;
 }
 
 a:link, a:visited {
@@ -343,7 +343,6 @@ input[type=submit]:hover, button:hover {
 }
 #main #content {
     float: left;
-    font-size: 16px;
     width: 80%;
   /* #content #history {{{ */
   /* #content #history }}} */
@@ -395,6 +394,9 @@ input[type=submit]:hover, button:hover {
 #main #content #history .journal p {
     margin-left: 10px;
 }
+#main #content .wiki-page {
+    font-size: 16px;
+}
 #main #content .wiki-page a:hover {
     text-decoration: underline;
 }
@@ -411,7 +413,6 @@ input[type=submit]:hover, button:hover {
 }
 #main #content .wiki-page .toc {
     bottom: 0;
-    font-size: 13px;
     width: 180px;
     background: #ffc;
     padding: 10px;
@@ -644,8 +645,9 @@ input[type=submit]:hover, button:hover {
     background-color: #f8f8f8;
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
     border: 1px solid #cacaca;
+    font-size: 13px;
+    width: 100%;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -679,6 +681,10 @@ input[type=submit]:hover, button:hover {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
+}
+#main #content .autoscroll table.issue {
+    margin: 0;
+    padding-bottom: 0;
 }
 #main #content .attachments {
     padding: 10px;
@@ -743,9 +749,8 @@ input[type=submit]:hover, button:hover {
 #main #sidebar h3 {
     background: #e6f1f6;
     color: #4e575b;
-    font-size: 16px;
-    font-weight: normal;
-    padding: 8px;
+    font-size: 14px;
+    padding: 4px 0;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -1502,13 +1507,6 @@ textarea.wiki-edit {
 
 li p {
     margin-top: 0;
-}
-
-div.issue {
-    background: #ffffdd;
-    padding: 6px;
-    margin-bottom: 6px;
-    border: 1px solid #d7d7d7;
 }
 
 p.breadcrumb {
@@ -2487,20 +2485,6 @@ div.wiki pre {
     width: auto;
     overflow-x: auto;
     overflow-y: hidden;
-}
-div.wiki ul.toc {
-    background-color: #ffffdd;
-    border: 1px solid #e4e4e4;
-    padding: 4px;
-    line-height: 1.2em;
-    margin-bottom: 12px;
-    margin-right: 12px;
-    margin-left: 0;
-    display: table;
-}
-
-* html div.wiki ul.toc {
-    width: 50%;
 }
 
 /* IE6 doesn't autosize div */
