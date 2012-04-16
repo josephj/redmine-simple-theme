@@ -11,7 +11,7 @@ html, body {
 input, textarea, select, option {
     color: #333;
     font-size: 13px;
-    font-family: Helvetica,arial,freesans,clean,sans-serif;
+    font-family: 微軟正黑體, "Microsoft JhengHei", 蘋果儷中黑, "Apple LiGothic Medium", Helvetica, arial, freesans, clean, sans-serif;
 }
 a {
     &:link, &:visited {
@@ -242,7 +242,6 @@ input[type=submit], button {
     /* #main #content {{{ */
     #content {
         float: left;
-        font-size: 16px;
         width: 80%;
         h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
             text-decoration: none;
@@ -279,6 +278,7 @@ input[type=submit], button {
         /* #content #history }}} */
         /* #content .wiki-page {{{ */
         .wiki-page {
+            font-size: 16px;
             a:hover {
                 text-decoration: underline;
             }
@@ -295,7 +295,6 @@ input[type=submit], button {
             }
             .toc {
                 bottom: 0;
-                font-size: 13px;
                 width: 180px;
                 background: #ffc;
                 padding: 10px;
@@ -503,8 +502,9 @@ input[type=submit], button {
             background-color: #f8f8f8;
             border-collapse: collapse;
             border-spacing: 0;
-            width: 100%;
             border: 1px solid #cacaca;
+            font-size: 13px;
+            width: 100%;
             @include border-radius(3px);
             th {
                 border-bottom: 1px solid #d8d8d8;
@@ -525,6 +525,10 @@ input[type=submit], button {
             padding: 3px;
             margin: 10px 0;
             @include border-radius(3px);
+            table.issue {
+                margin: 0;
+                padding-bottom: 0;
+            };
         }
         .attachments {
             padding: 10px;
@@ -590,9 +594,8 @@ input[type=submit], button {
         h3 {
             background: #e6f1f6;
             color:  #4e575b;
-            font-size: 16px;
-            font-weight: normal;
-            padding: 8px;
+            font-size: 14px;
+            padding: 4px 0;
             margin-bottom: 10px;
             text-align: center;
         }
@@ -1410,13 +1413,6 @@ textarea.wiki-edit {
 
 li p {
     margin-top: 0;
-}
-
-div.issue {
-    background: #ffffdd;
-    padding: 6px;
-    margin-bottom: 6px;
-    border: 1px solid #d7d7d7;
 }
 
 p {
@@ -2470,21 +2466,8 @@ div.wiki {
         overflow-x: auto;
         overflow-y: hidden;
     }
-    ul.toc {
-        background-color: #ffffdd;
-        border: 1px solid #e4e4e4;
-        padding: 4px;
-        line-height: 1.2em;
-        margin-bottom: 12px;
-        margin-right: 12px;
-        margin-left: 0;
-        display: table;
-    }
 }
 
-* html div.wiki ul.toc {
-    width: 50%;
-}
 
 /* IE6 doesn't autosize div */
 
