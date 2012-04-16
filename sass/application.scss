@@ -654,43 +654,43 @@ input[type=submit], button {
     padding-top: 2px;
     padding-bottom: 3px;
     &.projects {
-        background-image: url(../../images/projects.png);
+        background-image: url(/images/projects.png);
     }
     &.users {
-        background-image: url(../../images/user.png);
+        background-image: url(/images/user.png);
     }
     &.groups {
-        background-image: url(../../images/group.png);
+        background-image: url(/images/group.png);
     }
     &.roles {
-        background-image: url(../../images/database_key.png);
+        background-image: url(/images/database_key.png);
     }
     &.trackers {
-        background-image: url(../../images/ticket.png);
+        background-image: url(/images/ticket.png);
     }
     &.issue_statuses {
-        background-image: url(../../images/ticket_edit.png);
+        background-image: url(/images/ticket_edit.png);
     }
     &.workflows {
-        background-image: url(../../images/ticket_go.png);
+        background-image: url(/images/ticket_go.png);
     }
     &.custom_fields {
-        background-image: url(../../images/textfield.png);
+        background-image: url(/images/textfield.png);
     }
     &.enumerations {
-        background-image: url(../../images/text_list_bullets.png);
+        background-image: url(/images/text_list_bullets.png);
     }
     &.settings {
-        background-image: url(../../images/changeset.png);
+        background-image: url(/images/changeset.png);
     }
     &.plugins {
-        background-image: url(../../images/plugin.png);
+        background-image: url(/images/plugin.png);
     }
     &.info {
-        background-image: url(../../images/help.png);
+        background-image: url(/images/help.png);
     }
     &.server_authentication {
-        background-image: url(../../images/server_key.png);
+        background-image: url(/images/server_key.png);
     }
 }
 
@@ -820,7 +820,7 @@ html>body div.modal {
 }
 
 input#openid_url {
-    background: url(../../images/openid-bg.gif) no-repeat;
+    background: url(/images/openid-bg.gif) no-repeat;
     background-color: #fff;
     background-position: 0 50%;
     padding-left: 18px;
@@ -889,7 +889,7 @@ tr {
             white-space: nowrap;
         }
         &.idnt td.name span {
-            background: url(../../images/bullet_arrow_right.png) no-repeat 0 50%;
+            background: url(/images/bullet_arrow_right.png) no-repeat 0 50%;
             padding-left: 16px;
         }
         &.idnt-1 td.name {
@@ -950,7 +950,7 @@ tr {
             }
         }
         &.idnt td.subject a {
-            background: url(../../images/bullet_arrow_right.png) no-repeat 0 50%;
+            background: url(/images/bullet_arrow_right.png) no-repeat 0 50%;
             padding-left: 16px;
         }
         &.idnt-1 td.subject {
@@ -1009,13 +1009,13 @@ tr {
         }
     }
     span.expander {
-        background-image: url(../../images/bullet_toggle_plus.png);
+        background-image: url(/images/bullet_toggle_plus.png);
         padding-left: 8px;
         margin-left: 0;
         cursor: pointer;
     }
     &.open span.expander {
-        background-image: url(../../images/bullet_toggle_minus.png);
+        background-image: url(/images/bullet_toggle_minus.png);
     }
     &.changeset {
         height: 20px;
@@ -1079,10 +1079,10 @@ tr {
             }
         }
         &.locked td.subject {
-            background: url(../../images/locked.png) no-repeat 0 1px;
+            background: url(/images/locked.png) no-repeat 0 1px;
         }
         &.sticky td.subject {
-            background: url(../../images/bullet_go.png) no-repeat 0 1px;
+            background: url(/images/bullet_go.png) no-repeat 0 1px;
             font-weight: bold;
         }
     }
@@ -1097,7 +1097,7 @@ tr {
             padding-left: 20px;
         }
         &.shared td.name {
-            background: url(../../images/link.png) no-repeat 0% 70%;
+            background: url(/images/link.png) no-repeat 0% 70%;
         }
         td {
             &.date, &.status, &.sharing {
@@ -1224,10 +1224,10 @@ a.sort {
     background-position: 100% 50%;
     background-repeat: no-repeat;
     &.asc {
-        background-image: url(../../images/sort_asc.png);
+        background-image: url(/images/sort_asc.png);
     }
     &.desc {
-        background-image: url(../../images/sort_desc.png);
+        background-image: url(/images/sort_desc.png);
     }
 }
 
@@ -1243,13 +1243,13 @@ table {
         }
     }
     &.boards a.board {
-        background: url(../../images/comment.png) no-repeat 0% 50%;
+        background: url(/images/comment.png) no-repeat 0% 50%;
         padding-left: 20px;
     }
 }
 
 h3.comments {
-    background: url(../../images/comment.png) no-repeat 0% 50%;
+    background: url(/images/comment.png) no-repeat 0% 50%;
     padding-left: 20px;
 }
 
@@ -1258,25 +1258,25 @@ td.center {
 }
 
 h3.version {
-    background: url(../../images/package.png) no-repeat 0% 50%;
+    background: url(/images/package.png) no-repeat 0% 50%;
     padding-left: 20px;
 }
 
 div {
     &.issues h3 {
-        background: url(../../images/ticket.png) no-repeat 0% 50%;
+        background: url(/images/ticket.png) no-repeat 0% 50%;
         padding-left: 20px;
     }
     &.members h3 {
-        background: url(../../images/group.png) no-repeat 0% 50%;
+        background: url(/images/group.png) no-repeat 0% 50%;
         padding-left: 20px;
     }
     &.news h3 {
-        background: url(../../images/news.png) no-repeat 0% 50%;
+        background: url(/images/news.png) no-repeat 0% 50%;
         padding-left: 20px;
     }
     &.projects h3 {
-        background: url(../../images/projects.png) no-repeat 0% 50%;
+        background: url(/images/projects.png) no-repeat 0% 50%;
         padding-left: 20px;
     }
 }
@@ -1506,11 +1506,11 @@ fieldset {
         font-size: 0.9em;
         legend {
             padding-left: 16px;
-            background: url(../../images/arrow_expanded.png) no-repeat 0% 40%;
+            background: url(/images/arrow_expanded.png) no-repeat 0% 40%;
             cursor: pointer;
         }
         &.collapsed legend {
-            background-image: url(../../images/arrow_collapsed.png);
+            background-image: url(/images/arrow_collapsed.png);
         }
     }
     &#date-range p {
@@ -1648,48 +1648,48 @@ div#search-results-counts {
 
 dt {
     &.issue {
-        background-image: url(../../images/ticket.png);
+        background-image: url(/images/ticket.png);
     }
     &.issue-edit {
-        background-image: url(../../images/ticket_edit.png);
+        background-image: url(/images/ticket_edit.png);
     }
     &.issue-closed {
-        background-image: url(../../images/ticket_checked.png);
+        background-image: url(/images/ticket_checked.png);
     }
     &.issue-note {
-        background-image: url(../../images/ticket_note.png);
+        background-image: url(/images/ticket_note.png);
     }
     &.changeset {
-        background-image: url(../../images/changeset.png);
+        background-image: url(/images/changeset.png);
     }
     &.news {
-        background-image: url(../../images/news.png);
+        background-image: url(/images/news.png);
     }
     &.message {
-        background-image: url(../../images/message.png);
+        background-image: url(/images/message.png);
     }
     &.reply {
-        background-image: url(../../images/comments.png);
+        background-image: url(/images/comments.png);
     }
     &.wiki-page {
-        background-image: url(../../images/wiki_edit.png);
+        background-image: url(/images/wiki_edit.png);
     }
     &.attachment {
-        background-image: url(../../images/attachment.png);
+        background-image: url(/images/attachment.png);
     }
     &.document {
-        background-image: url(../../images/document.png);
+        background-image: url(/images/document.png);
     }
     &.project {
-        background-image: url(../../images/projects.png);
+        background-image: url(/images/projects.png);
     }
     &.time-entry {
-        background-image: url(../../images/time.png);
+        background-image: url(/images/time.png);
     }
 }
 
 #search-results dt.issue.closed {
-    background-image: url(../../images/ticket_checked.png);
+    background-image: url(/images/ticket_checked.png);
 }
 
 div#roadmap {
@@ -1809,7 +1809,7 @@ ul.projects {
 
 .my-project {
     padding-left: 18px;
-    background: url(../../images/fav.png) no-repeat 0 50%;
+    background: url(/images/fav.png) no-repeat 0 50%;
 }
 
 #tracker_project_ids {
@@ -1932,7 +1932,7 @@ input#time_entry_comments {
 
 #preview fieldset {
     margin-top: 1em;
-    background: url(../../images/draft.png);
+    background: url(/images/draft.png);
 }
 
 .tabular.settings {
@@ -2012,7 +2012,7 @@ p.other-formats {
 }
 
 a.atom {
-    background: url(../../images/feed.png) no-repeat 1px 50%;
+    background: url(/images/feed.png) no-repeat 1px 50%;
     padding: 2px 0px 3px 16px;
 }
 
@@ -2043,7 +2043,7 @@ div {
 
 table.members td.group {
     padding-left: 20px;
-    background: url(../../images/group.png) no-repeat 0% 50%;
+    background: url(/images/group.png) no-repeat 0% 50%;
 }
 
 input {
@@ -2068,7 +2068,7 @@ input {
 div.flash {
     margin-top: 8px;
     &.error {
-        background: url(../../images/exclamation.png) 8px 50% no-repeat;
+        background: url(/images/exclamation.png) 8px 50% no-repeat;
         background-color: #ffe3e3;
         border-color: #dd0000;
         color: #880000;
@@ -2076,7 +2076,7 @@ div.flash {
 }
 
 #errorExplanation {
-    background: url(../../images/exclamation.png) 8px 50% no-repeat;
+    background: url(/images/exclamation.png) 8px 50% no-repeat;
     background-color: #ffe3e3;
     border-color: #dd0000;
     color: #880000;
@@ -2084,13 +2084,13 @@ div.flash {
 
 div.flash {
     &.notice {
-        background: url(../../images/true.png) 8px 5px no-repeat;
+        background: url(/images/true.png) 8px 5px no-repeat;
         background-color: #dfffdf;
         border-color: #9fcf9f;
         color: #005f00;
     }
     &.warning {
-        background: url(../../images/warning.png) 8px 5px no-repeat;
+        background: url(/images/warning.png) 8px 5px no-repeat;
         background-color: #FFEBC1;
         border-color: #FDBF3B;
         color: #A6750C;
@@ -2107,7 +2107,7 @@ div.flash {
 
 span.error {
     padding-left: 20px;
-    background: url(../../images/exclamation.png) no-repeat 0 50%;
+    background: url(/images/exclamation.png) no-repeat 0 50%;
 }
 
 #errorExplanation {
@@ -2143,7 +2143,7 @@ html>body #ajax-indicator {
 #ajax-indicator span {
     background-position: 0% 40%;
     background-repeat: no-repeat;
-    background-image: url(../../images/loading.gif);
+    background-image: url(/images/loading.gif);
     padding-left: 26px;
     vertical-align: bottom;
 }
@@ -2191,29 +2191,29 @@ table.cal {
         }
     }
     .starting a {
-        background: url(../../images/bullet_go.png) no-repeat -1px -2px;
+        background: url(/images/bullet_go.png) no-repeat -1px -2px;
         padding-left: 16px;
     }
 }
 
 p.cal.legend .starting {
-    background: url(../../images/bullet_go.png) no-repeat -1px -2px;
+    background: url(/images/bullet_go.png) no-repeat -1px -2px;
     padding-left: 16px;
 }
 
 table.cal .ending a, p.cal.legend .ending {
-    background: url(../../images/bullet_end.png) no-repeat -1px -2px;
+    background: url(/images/bullet_end.png) no-repeat -1px -2px;
     padding-left: 16px;
 }
 
 table.cal .starting.ending a {
-    background: url(../../images/bullet_diamond.png) no-repeat -1px -2px;
+    background: url(/images/bullet_diamond.png) no-repeat -1px -2px;
     padding-left: 16px;
 }
 
 p.cal.legend {
     .starting.ending {
-        background: url(../../images/bullet_diamond.png) no-repeat -1px -2px;
+        background: url(/images/bullet_diamond.png) no-repeat -1px -2px;
         padding-left: 16px;
     }
     span {
@@ -2365,12 +2365,12 @@ button {
     }
     &.tab-left {
         right: 20px;
-        background: #eeeeee url(../../images/bullet_arrow_left.png) no-repeat 50% 50%;
+        background: #eeeeee url(/images/bullet_arrow_left.png) no-repeat 50% 50%;
         border-top-left-radius: 3px;
     }
     &.tab-right {
         right: 0;
-        background: #eeeeee url(../../images/bullet_arrow_right.png) no-repeat 50% 50%;
+        background: #eeeeee url(/images/bullet_arrow_right.png) no-repeat 50% 50%;
         border-top-right-radius: 3px;
     }
 }
@@ -2453,7 +2453,7 @@ div.wiki {
         background-position: 0% 60%;
         background-repeat: no-repeat;
         padding-left: 12px;
-        background-image: url(../../images/external.png);
+        background-image: url(/images/external.png);
     }
     a.new {
         color: #b73535;
@@ -2572,9 +2572,9 @@ a.close-icon {
     height: 12px;
     background-repeat: no-repeat;
     cursor: pointer;
-    background-image: url('../../images/close.png');
+    background-image: url('/images/close.png');
     &:hover {
-        background-image: url('../../images/close_hl.png');
+        background-image: url('/images/close_hl.png');
     }
 }
 
@@ -2620,17 +2620,17 @@ a.close-icon {
 }
 
 .task_late {
-    background: #ff6666 url(../../images/task_late.png);
+    background: #ff6666 url(/images/task_late.png);
     border: 1px solid #f66;
 }
 
 .task_done {
-    background: #00c600 url(../../images/task_done.png);
+    background: #00c600 url(/images/task_done.png);
     border: 1px solid #00c600;
 }
 
 .task_todo {
-    background: #aaaaaa url(../../images/task_todo.png);
+    background: #aaaaaa url(/images/task_todo.png);
     border: 1px solid #aaa;
     &.parent {
         background: #888;
@@ -2646,7 +2646,7 @@ a.close-icon {
 .task.parent.marker {
     &.starting {
         position: absolute;
-        background: url(../../images/task_parent_end.png) no-repeat 0 0;
+        background: url(/images/task_parent_end.png) no-repeat 0 0;
         width: 8px;
         height: 16px;
         margin-left: -4px;
@@ -2655,7 +2655,7 @@ a.close-icon {
     }
     &.ending {
         position: absolute;
-        background: url(../../images/task_parent_end.png) no-repeat 0 0;
+        background: url(/images/task_parent_end.png) no-repeat 0 0;
         width: 8px;
         height: 16px;
         margin-left: -4px;
@@ -2666,25 +2666,25 @@ a.close-icon {
 
 .version {
     &.task_late {
-        background: #ff6666 url(../../images/milestone_late.png);
+        background: #ff6666 url(/images/milestone_late.png);
         border: 1px solid #f66;
         height: 2px;
         margin-top: 3px;
     }
     &.task_done {
-        background: #00c600 url(../../images/milestone_done.png);
+        background: #00c600 url(/images/milestone_done.png);
         border: 1px solid #00c600;
         height: 2px;
         margin-top: 3px;
     }
     &.task_todo {
-        background: white url(../../images/milestone_todo.png);
+        background: white url(/images/milestone_todo.png);
         border: 1px solid #fff;
         height: 2px;
         margin-top: 3px;
     }
     &.marker {
-        background-image: url(../../images/version_marker.png);
+        background-image: url(/images/version_marker.png);
         background-repeat: no-repeat;
         border: 0;
         margin-left: -4px;
@@ -2694,25 +2694,25 @@ a.close-icon {
 
 .project {
     &.task_late {
-        background: #ff6666 url(../../images/milestone_late.png);
+        background: #ff6666 url(/images/milestone_late.png);
         border: 1px solid #f66;
         height: 2px;
         margin-top: 3px;
     }
     &.task_done {
-        background: #00c600 url(../../images/milestone_done.png);
+        background: #00c600 url(/images/milestone_done.png);
         border: 1px solid #00c600;
         height: 2px;
         margin-top: 3px;
     }
     &.task_todo {
-        background: white url(../../images/milestone_todo.png);
+        background: white url(/images/milestone_todo.png);
         border: 1px solid #fff;
         height: 2px;
         margin-top: 3px;
     }
     &.marker {
-        background-image: url(../../images/project_marker.png);
+        background-image: url(/images/project_marker.png);
         background-repeat: no-repeat;
         border: 0;
         margin-left: -4px;
@@ -2739,177 +2739,177 @@ a.close-icon {
 }
 
 .icon-add {
-    background-image: url(../../images/add.png);
+    background-image: url(/images/add.png);
 }
 
 .icon-edit {
-    background-image: url(../../images/edit.png);
+    background-image: url(/images/edit.png);
 }
 
 .icon-copy {
-    background-image: url(../../images/copy.png);
+    background-image: url(/images/copy.png);
 }
 
 .icon-duplicate {
-    background-image: url(../../images/duplicate.png);
+    background-image: url(/images/duplicate.png);
 }
 
 .icon-del {
-    background-image: url(../../images/delete.png);
+    background-image: url(/images/delete.png);
 }
 
 .icon-move {
-    background-image: url(../../images/move.png);
+    background-image: url(/images/move.png);
 }
 
 .icon-save {
-    background-image: url(../../images/save.png);
+    background-image: url(/images/save.png);
 }
 
 .icon-cancel {
-    background-image: url(../../images/cancel.png);
+    background-image: url(/images/cancel.png);
 }
 
 .icon-multiple {
-    background-image: url(../../images/table_multiple.png);
+    background-image: url(/images/table_multiple.png);
 }
 
 .icon-folder {
-    background-image: url(../../images/folder.png);
+    background-image: url(/images/folder.png);
 }
 
 .open .icon-folder {
-    background-image: url(../../images/folder_open.png);
+    background-image: url(/images/folder_open.png);
 }
 
 .icon-package {
-    background-image: url(../../images/package.png);
+    background-image: url(/images/package.png);
 }
 
 .icon-user {
-    background-image: url(../../images/user.png);
+    background-image: url(/images/user.png);
 }
 
 .icon-projects {
-    background-image: url(../../images/projects.png);
+    background-image: url(/images/projects.png);
 }
 
 .icon-help {
-    background-image: url(../../images/help.png);
+    background-image: url(/images/help.png);
 }
 
 .icon-attachment {
-    background-image: url(../../images/attachment.png);
+    background-image: url(/images/attachment.png);
 }
 
 .icon-history {
-    background-image: url(../../images/history.png);
+    background-image: url(/images/history.png);
 }
 
 .icon-time {
-    background-image: url(../../images/time.png);
+    background-image: url(/images/time.png);
 }
 
 .icon-time-add {
-    background-image: url(../../images/time_add.png);
+    background-image: url(/images/time_add.png);
 }
 
 .icon-stats {
-    background-image: url(../../images/stats.png);
+    background-image: url(/images/stats.png);
 }
 
 .icon-warning {
-    background-image: url(../../images/warning.png);
+    background-image: url(/images/warning.png);
 }
 
 .icon-fav {
-    background-image: url(../../images/fav.png);
+    background-image: url(/images/fav.png);
 }
 
 .icon-fav-off {
-    background-image: url(../../images/fav_off.png);
+    background-image: url(/images/fav_off.png);
 }
 
 .icon-reload {
-    background-image: url(../../images/reload.png);
+    background-image: url(/images/reload.png);
 }
 
 .icon-lock {
-    background-image: url(../../images/locked.png);
+    background-image: url(/images/locked.png);
 }
 
 .icon-unlock {
-    background-image: url(../../images/unlock.png);
+    background-image: url(/images/unlock.png);
 }
 
 .icon-checked {
-    background-image: url(../../images/true.png);
+    background-image: url(/images/true.png);
 }
 
 .icon-details {
-    background-image: url(../../images/zoom_in.png);
+    background-image: url(/images/zoom_in.png);
 }
 
 .icon-report {
-    background-image: url(../../images/report.png);
+    background-image: url(/images/report.png);
 }
 
 .icon-comment {
-    background-image: url(../../images/comment.png);
+    background-image: url(/images/comment.png);
 }
 
 .icon-summary {
-    background-image: url(../../images/lightning.png);
+    background-image: url(/images/lightning.png);
 }
 
 .icon-server-authentication {
-    background-image: url(../../images/server_key.png);
+    background-image: url(/images/server_key.png);
 }
 
 .icon-issue {
-    background-image: url(../../images/ticket.png);
+    background-image: url(/images/ticket.png);
 }
 
 .icon-zoom-in {
-    background-image: url(../../images/zoom_in.png);
+    background-image: url(/images/zoom_in.png);
 }
 
 .icon-zoom-out {
-    background-image: url(../../images/zoom_out.png);
+    background-image: url(/images/zoom_out.png);
 }
 
 .icon-passwd {
-    background-image: url(../../images/textfield_key.png);
+    background-image: url(/images/textfield_key.png);
 }
 
 .icon-file {
-    background-image: url(../../images/files/default.png);
+    background-image: url(/images/files/default.png);
     &.text-plain {
-        background-image: url(../../images/files/text.png);
+        background-image: url(/images/files/text.png);
     }
     &.text-x-c {
-        background-image: url(../../images/files/c.png);
+        background-image: url(/images/files/c.png);
     }
     &.text-x-csharp {
-        background-image: url(../../images/files/csharp.png);
+        background-image: url(/images/files/csharp.png);
     }
     &.text-x-php {
-        background-image: url(../../images/files/php.png);
+        background-image: url(/images/files/php.png);
     }
     &.text-x-ruby {
-        background-image: url(../../images/files/ruby.png);
+        background-image: url(/images/files/ruby.png);
     }
     &.text-xml {
-        background-image: url(../../images/files/xml.png);
+        background-image: url(/images/files/xml.png);
     }
     &.image-gif, &.image-jpeg, &.image-png, &.image-tiff {
-        background-image: url(../../images/files/image.png);
+        background-image: url(/images/files/image.png);
     }
     &.application-pdf {
-        background-image: url(../../images/files/pdf.png);
+        background-image: url(/images/files/pdf.png);
     }
     &.application-zip, &.application-x-gzip {
-        background-image: url(../../images/files/zip.png);
+        background-image: url(/images/files/zip.png);
     }
 }
 
