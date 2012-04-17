@@ -733,6 +733,9 @@ input[type=submit], button {
         }
     }
 }
+#wrapper {
+    min-width: 1040px;
+}
 .wiki-edit {
     height: 500px;
     font-size: 16px;
