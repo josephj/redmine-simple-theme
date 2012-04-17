@@ -262,6 +262,27 @@ input[type=submit], button {
                 margin: 0 5px;
             }
         }
+        table.progress {
+            border-collapse: collapse;
+            border-spacing: 0;
+            empty-cells: show;
+            text-align: center;
+            float: left;
+            padding: 0;
+            margin: 1px 6px 1px 0px;
+            td {
+                height: 0.5em;
+                &.closed {
+                    background: #BAE0BA none repeat scroll 0%;
+                }
+                &.done {
+                    background: #D3EDD3 none repeat scroll 0%;
+                }
+                &.todo {
+                    background: #eee none repeat scroll 0%;
+                }
+            }
+        }
         /* #content #history {{{ */
         #history {
             .journal {
@@ -277,6 +298,7 @@ input[type=submit], button {
         }
         /* #content #history }}} */
         /* #content .wiki-page {{{ */
+        #preview,
         .wiki-page {
             font-size: 16px;
             a:hover {
@@ -294,11 +316,14 @@ input[type=submit], button {
                 }
             }
             .toc {
-                bottom: 0;
-                width: 180px;
+                @include border-radius(5px);
                 background: #ffc;
+                bottom: 30px;
+                top: 300px;
+                width: 15.5%;
                 padding: 10px;
                 position: fixed;
+                overflow: auto;
                 right: 8px;
                 li {
                     display: block;
@@ -329,14 +354,20 @@ input[type=submit], button {
                 font-family: 'Bitstream Vera Sans Mono', Courier, monospace;
                 line-height: 1.3;
             }
-            ul {
+            ul, ol {
                 margin: 0 0 8px 20px;
-                li {
-                    list-style: disc;
-                    li {
-                        list-style: circle;
+            }
+            ul li {
+                list-style-type: disc;
+                ul li {
+                    list-style-type: circle;
+                    ul li {
+                        list-style-type: square;
                     }
                 }
+            }
+            ol li {
+                list-style: decimal;
             }
             table {
                 th {
@@ -380,12 +411,6 @@ input[type=submit], button {
                     font-size: 13px;
                     width: 100%;
                     @include border-radius(10px);
-                    table.progress {
-                        background: #fff;
-                        td.closed {
-                            background: #c8f2c8;
-                        }
-                    }
                 }
                 th {
                     background: #d2d7e6;
@@ -398,6 +423,9 @@ input[type=submit], button {
                 td {
                     background: #e6e9f5;
                     border: 1px solid #fff;
+                }
+                td, th {
+                    vertical-align: middle;
                 }
             }
             hr {
@@ -511,13 +539,34 @@ input[type=submit], button {
                 color: #555555;
                 font-weight: bold;
                 padding: 6px 3px;
-                text-align: left;
+                text-align: center;
                 @include background-image(linear-gradient(#fafafa, #eaeaea));
                 @include text-shadow(0 1px 0 #FFFFFF);
             }
             td {
                 border-bottom: solid 1px #eee;
                 padding: 8px;
+                table.progress {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    empty-cells: show;
+                    text-align: center;
+                    float: left;
+                    padding: 0;
+                    margin: 1px 6px 1px 0px;
+                    td {
+                        height: 0.5em;
+                        &.closed {
+                            background: #BAE0BA none repeat scroll 0%;
+                        }
+                        &.done {
+                            background: #D3EDD3 none repeat scroll 0%;
+                        }
+                        &.todo {
+                            background: #eee none repeat scroll 0%;
+                        }
+                    }
+                }
             }
         }
         .autoscroll {
@@ -580,6 +629,7 @@ input[type=submit], button {
     /* }}} */
     /* #main #sidebar {{{ */
     #sidebar {
+        background: #fff;
         border: 1px solid #c5d5dd;
         float: right;
         width: 180px;
@@ -610,6 +660,55 @@ input[type=submit], button {
             display: inline-block;
             margin-top: 15px;
         }
+        #admin-menu {
+            a {
+                background-position: 0% 40%;
+                background-repeat: no-repeat;
+                margin-left: 10px;
+                padding-left: 20px;
+                padding-top: 2px;
+                padding-bottom: 3px;
+                &.projects {
+                    background-image: url(/images/projects.png);
+                }
+                &.users {
+                    background-image: url(/images/user.png);
+                }
+                &.groups {
+                    background-image: url(/images/group.png);
+                }
+                &.roles {
+                    background-image: url(/images/database_key.png);
+                }
+                &.trackers {
+                    background-image: url(/images/ticket.png);
+                }
+                &.issue_statuses {
+                    background-image: url(/images/ticket_edit.png);
+                }
+                &.workflows {
+                    background-image: url(/images/ticket_go.png);
+                }
+                &.custom_fields {
+                    background-image: url(/images/textfield.png);
+                }
+                &.enumerations {
+                    background-image: url(/images/text_list_bullets.png);
+                }
+                &.settings {
+                    background-image: url(/images/changeset.png);
+                }
+                &.plugins {
+                    background-image: url(/images/plugin.png);
+                }
+                &.info {
+                    background-image: url(/images/help.png);
+                }
+                &.server_authentication {
+                    background-image: url(/images/server_key.png);
+                }
+            }
+        }
     }
     /* }}} */
     #search-results span.project:after {
@@ -631,71 +730,19 @@ input[type=submit], button {
     #main {
         ul {
             margin: 0 0 8px 20px;
-            li {
-                list-style: disc;
-                li {
-                    list-style: circle;
-                }
-            }
         }
     }
 }
 .wiki-edit {
-    width: 600px;
-    height: 400px;
+    height: 500px;
     font-size: 16px;
     line-height: 1.5;
+    padding: 5px;
 }
 .required {
     color: #a00;
 }
 
-#admin-menu a {
-    background-position: 0% 40%;
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    padding-top: 2px;
-    padding-bottom: 3px;
-    &.projects {
-        background-image: url(/images/projects.png);
-    }
-    &.users {
-        background-image: url(/images/user.png);
-    }
-    &.groups {
-        background-image: url(/images/group.png);
-    }
-    &.roles {
-        background-image: url(/images/database_key.png);
-    }
-    &.trackers {
-        background-image: url(/images/ticket.png);
-    }
-    &.issue_statuses {
-        background-image: url(/images/ticket_edit.png);
-    }
-    &.workflows {
-        background-image: url(/images/ticket_go.png);
-    }
-    &.custom_fields {
-        background-image: url(/images/textfield.png);
-    }
-    &.enumerations {
-        background-image: url(/images/text_list_bullets.png);
-    }
-    &.settings {
-        background-image: url(/images/changeset.png);
-    }
-    &.plugins {
-        background-image: url(/images/plugin.png);
-    }
-    &.info {
-        background-image: url(/images/help.png);
-    }
-    &.server_authentication {
-        background-image: url(/images/server_key.png);
-    }
-}
 
 #sidebar {
     float: right;
@@ -1327,8 +1374,27 @@ div {
     margin-bottom: 10px;
     background-color: #f6f6f6;
     color: #505050;
-    line-height: 1.5em;
+    line-height: 1.5;
     border: 1px solid #e4e4e4;
+    h3 {
+        margin-bottom: 10px;
+    }
+    li {
+        list-style: disc;
+        margin-bottom: 5px;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    a {
+        font-weight: bold;
+    }
+    .author {
+        font-size: 10px;
+        a {
+            font-weight: normal;
+        }
+    }
 }
 
 div.square {
@@ -1408,7 +1474,8 @@ acronym {
 }
 
 textarea.wiki-edit {
-    width: 99%;
+    width: 98%;
+    margin: 0 auto;
 }
 
 li p {
@@ -1788,11 +1855,11 @@ ul.projects {
     li {
         &.root {
             list-style-type: none;
-            margin-bottom: 1em;
+            margin-bottom: 0.3em;
         }
         &.child {
             list-style-type: none;
-            margin-top: 1em;
+            margin-top: 0.3em;
         }
     }
     div.root a.project {
@@ -1926,17 +1993,13 @@ input#time_entry_comments {
     width: 90%;
 }
 
-#preview fieldset {
-    margin-top: 1em;
-    background: url(/images/draft.png);
-}
 
 .tabular.settings {
     p {
         padding-left: 300px;
     }
     label {
-        margin-left: -300px;
+        margin-left: 0;
         width: 295px;
     }
     textarea {
@@ -2247,26 +2310,6 @@ div.tooltip:hover span.tip {
 
 /***** Progress bar *****/
 
-table.progress {
-    border-collapse: collapse;
-    border-spacing: 0pt;
-    empty-cells: show;
-    text-align: center;
-    float: left;
-    margin: 1px 6px 1px 0px;
-    td {
-        height: 1em;
-        &.closed {
-            background: #BAE0BA none repeat scroll 0%;
-        }
-        &.done {
-            background: #D3EDD3 none repeat scroll 0%;
-        }
-        &.todo {
-            background: #eee none repeat scroll 0%;
-        }
-    }
-}
 
 p {
     &.pourcent {
@@ -3002,4 +3045,25 @@ h2 img {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+body.action-edit {
+    #wiki_form {
+        float: left;
+        width: 50%;
+    }
+    #preview.wiki {
+        float: right;
+        width: 50%;
+        fieldset.preview {
+            margin-top: -14px;
+            margin-left: 10px;
+            background: url(/images/draft.png);
+            padding: 10px;
+            font-size: 16px;
+            legend {
+                font-weight: bold;
+            }
+        }
+    }
 }
