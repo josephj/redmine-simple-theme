@@ -3727,3 +3727,13 @@ body.action-edit #preview.wiki fieldset.preview {
 body.action-edit #preview.wiki fieldset.preview legend {
     font-weight: bold;
 }
+
+/* line 3074, ../sass/application.scss */
+iframe {
+    border: solid 2px #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}

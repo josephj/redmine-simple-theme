@@ -3070,3 +3070,9 @@ body.action-edit {
         }
     }
 }
+
+iframe {
+    border: solid 2px #ccc;
+    @include border-radius(5px);
+
+}
